@@ -11,7 +11,24 @@
     
 <aside class="head_content">
 
-<h1>Vi vill läsa upp en fil och skriver ut.</h1>
+<?php
+$myfile = fopen("courses.txt", "r") or die("Unable to open file!");
+
+
+
+$lines = file('courses.txt') or die("Unable to open file!");
+$count = 0;
+echo "<ul>";
+foreach($lines as $line ) {
+    
+    echo "<li class='row'>";
+    echo $line;
+    echo "<br>";
+}
+
+echo "</ul>";
+
+?>
 
 </aside>
 
