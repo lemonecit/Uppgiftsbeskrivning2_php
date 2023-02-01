@@ -23,7 +23,8 @@ foreach($lines as $line ) {
     
     echo "<li class='row'>";
     echo $line;
-    echo "<br>";
+    echo "</li>";
+
 }
 
 echo "</ul>";
