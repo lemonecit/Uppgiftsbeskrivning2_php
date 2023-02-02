@@ -12,24 +12,67 @@
 <aside class="head_content">
 
 
+  <?php
 
 
-    <span>Hejsan
-<?php echo $_GET["fname"]; ?> <?php echo $_GET["sname"]; ?> 
-</span>
+    if (isset($_GET['fname'], $_GET['sname'])) {
+
+                $namn = htmlspecialchars($_GET['fname']);
+                $efternamn = htmlspecialchars($_GET['sname']);
+                $warningMezz = "Ledsen, något av de fälten kan ju inte vara tomt, så vänligen fylla och försöka igen!";
+
+                if($namn == "" or $efternamn == ""){
+ 
+                  echo "<span class='warning'>" . $warningMezz . "</span>";
+
+                
+                }
+
+
+                else {
+
+
+                    $samman = $namn . " " . $efternamn;
+                    echo "Hejsan, kul att se dig," . $samman;
+    
+    
+                    }
+                }
+                
+            
+
+            
+
+
+
+
+?> 
+
 
 
 
 
 <form action="forms.php" method="get">
 <label for="fName">
-    <input type="text" name="fname">
+    <input type="text" id="fornamn" name="fname">
 </label>
 <label for="sName">
-    <input type="text" name="sname">
+    <input type="text" id="efternamn" name="sname">
 </label>
 
-<input type="submit" value="Skriv ut ditt förnamn och efternamn!">
+<input type="submit" onclick="clearform()" value="Skriv ut">
+
+<?php
+
+function clearform(){
+
+    document.getElementById('fornamn').value == "";
+    document.getElementById('efternamn').value == "";
+
+
+}
+
+?>
 
 </form>
 
@@ -43,7 +86,7 @@
     <input type="text" name="width">
 </label>
 
-<input type="submit" value="Skriv ut ditt förnamn och efternamn!">
+<input type="submit" value="Beräkna">
 
 </form>
 
