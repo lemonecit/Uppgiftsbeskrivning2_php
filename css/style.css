@@ -6,9 +6,11 @@ margin:0;
 padding:0;
 position:sticky;
 top:0;
+z-index:100;
 }
 
 header h1 {
+    line-height: 47px;
 color:white;
 text-align: center;
 font-size:30px;
@@ -32,6 +34,13 @@ footer {
 
 }
 
+footer h4 {
+
+text-align:center;
+line-height:10px;
+
+}
+
 
 
 
@@ -52,16 +61,53 @@ padding:0;
 display:flex;
 width:100%;
 overflow: auto;
-height:600px; 
+height:1500px; 
 
 }
 
 .leftpanel {
 
-background-color:black;
-width:20%;
+background-color:rgb(228, 228, 228);
+width:15%;
 height:100%;
 
+}
+
+.leftpanel ul {
+    margin:0 auto;
+    width: 200px;
+	position:fixed;
+	top:100px;
+
+	
+}
+
+.leftpanel ul li {
+    border: 1px solid white;
+    text-align: center;
+    height: 50px;
+    list-style-type: none;
+    background-color: #ff9800;
+    padding: 8px;
+    line-height: 50px;
+
+
+}
+
+.leftpanel li a {
+
+   
+    color: white;
+    /* background: beige; */
+    text-decoration: none;
+}
+
+.leftpanel li:hover {
+
+   
+    color: white;
+    background: black; 
+    text-decoration: none;
 }
 
 .head_content {
@@ -71,8 +117,104 @@ height:100%;
 
 }
 
-.row {
+.head_content ol {
 
-    background-color:red;
+    margin: 0 auto;
+    width: 900px;
+    position: relative;
+    top: 100px;
+    
+
+    
+}
+
+.head_content ol li {
+
+    font-weight:600;
+
+}
+
+
+.head_content article {
+   margin:0 auto;
+   width:35%;
+
+
+}
+
+.uppgift {
+    margin-top:10px;
+    width:600px;
+    padding:10px;
+    display: block;
+    border:1px solid black;
+    border-radius:25px;
+    margin-bottom:15px;
+
+}
+
+.uppgift span {
+
+    font-size:14px;
+}
+
+.head_content h2 {
+
+    display: block;
+
+}
+
+.fieldRow {
+background-color: #e4e4e4;
+display: block;
+padding:10px;
+border-radius:25px;
+margin:5px;
+border:1px solid black;
+
+}
+
+.fieldRow input[type="submit"] {
+    color:white;
+    border-radius: 25px;
+    background-color: #ff9800;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    border:1px solid white;
+
+}
+
+
+.submitRow {
+    background-color: #e4e4e4;
+    display: block;
+    padding:10px;
+    border-radius:25px;
+    margin:5px;
+    border:1px solid black;
+    text-align: center;
+    
+    }
+
+.submitRow  input[type="submit"] {
+    font-weight: 600;
+    color: white;
+    border-radius: 25px;
+    background-color: #ff9800;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid white;
+    height: 40px;
+
+}
+
+
+.warning {
+
+font-weight:bold;
+color:red;
+
 
 }

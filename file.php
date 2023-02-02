@@ -9,7 +9,12 @@
         <?php include('includes/leftpanel.php'); ?>
 
     
-<aside class="head_content">
+        <aside class="head_content">
+<article>
+
+<h2>Del 5</h2>
+    <label for="uppgift1">Inläsning av extern textfil</label>
+    <aside class="uppgift" name="uppgift1">
 
 <?php
 $myfile = fopen("courses.txt", "r") or die("Unable to open file!");
