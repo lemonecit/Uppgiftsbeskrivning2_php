@@ -10,34 +10,40 @@
 
     
         <aside class="head_content">
-<article>
+            <article>
 
-<h2>Del 5</h2>
-    <label for="uppgift1">Inläsning av extern textfil</label>
-    <aside class="uppgift" name="uppgift1">
-
-<?php
-$myfile = fopen("courses.txt", "r") or die("Unable to open file!");
-
-
-
-$lines = file('courses.txt') or die("Unable to open file!");
-$count = 0;
-echo "<ul>";
-foreach($lines as $line ) {
+    <h2>
+        Del 5
+    </h2>
     
-    echo "<li class='row'>";
-    echo $line;
-    echo "</li>";
+    <span>
+        Inläsning av extern textfil
+    </span>
+            <aside class="uppgift" id="uppgift1">
 
-}
+                    <?php
+                    $myfile = fopen("courses.txt", "r") or die("Unable to open file!");
 
-echo "</ul>";
 
-?>
 
-</aside>
+                    $lines = file('courses.txt') or die("Unable to open file!");
+                    $count = 0;
+                    echo "<ul>";
+                    foreach($lines as $line ) {
 
+                    echo "<li class='row'>";
+                    echo $line;
+                    echo "</li>";
+
+                    }
+
+                    echo "</ul>";
+
+                    ?>
+
+                </aside>
+            </article>
+        </aside>
     </section>
 
 </main>

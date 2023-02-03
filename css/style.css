@@ -117,29 +117,29 @@ height:100%;
 
 }
 
-.head_content ol {
+.head_content ol b {
+    display:block;
+}
 
+.head_content span {
+    display:block;
+    font-weight:normal;
+}
+
+.head_content ol {
     margin: 0 auto;
     width: 900px;
     position: relative;
-    top: 100px;
-    
-
-    
+    top: 100px;   
 }
 
 .head_content ol li {
-
     font-weight:600;
-
 }
-
 
 .head_content article {
    margin:0 auto;
    width:35%;
-
-
 }
 
 .uppgift {

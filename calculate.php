@@ -8,14 +8,15 @@
 
 
         <?php include('includes/leftpanel.php'); ?>
-
+   
     
         <aside class="head_content">
-<article>
 
+        <article>
 
-    <label for="uppgift1">Beräkna area</label>
-    <aside class="uppgift" name="uppgift1">
+    <span>Beräkna area</span>
+    <aside class="uppgift" id="uppgift1">
+
     <?php
 
     if (isset($_POST['height'], $_POST['width'])) {
@@ -42,9 +43,8 @@
           }
         
         }
+     
         
-        
-        // echo 'längden ' . $a .' meter och bredden ' . $b . ' meter ger en area pa ' .  ($a*$b) . ' kvadratmeter.';
         
         
         ?>
@@ -52,9 +52,9 @@
         <a href="forms.php">Gå tillbaks till formulärsida</a>
         
 
-
+          </aside>
+     
         </article>
-
 </aside>
 
 </section>

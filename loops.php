@@ -14,28 +14,28 @@
 <article>
 
 <h2>Del 3 - Upprepningar</h2>
-    <label for="uppgift1">Uppgift1</label>
-    <aside class="uppgift" name="uppgift1">
+    <span>Uppgift1</span>
+    <aside class="uppgift" id="uppgift1">
 
 <?php
 
 for($i = 10; $i>=1 ; $i--) {
 
-    echo $i . "</br>";
+    echo $i . "<br>";
 
 
 }
 ?>
 
     </aside>
-    <label for="uppgift2">Uppgift2</label>
-    <aside class="uppgift" name="uppgift2">
+    <span>Uppgift2</span>
+    <aside class="uppgift" id="uppgift2">
 <?php
 $kurser = ["Webbutveckling I", "Introduktion till programmering i JavaScript", "Grafisk teknik för webb", "Webbanvändbarhet", "Databaser", "Webbutveckling II", "Webbdesign för CMS", "Webbutveckling III"];
 
 for ($i=0 ; $i < count($kurser); $i++) {
 
-    echo $kurser[$i] . "<br/>";
+    echo $kurser[$i] . "<br>";
 
 }
 
@@ -43,8 +43,8 @@ for ($i=0 ; $i < count($kurser); $i++) {
 
 </aside>
 
-<label for="uppgift3">Uppgift3</label>
-    <aside class="uppgift" name="uppgift3">
+<span>Uppgift3</span>
+    <aside class="uppgift" id="uppgift3">
 
 <?php
 
@@ -54,7 +54,7 @@ sort($sortkurser);
 
 for ($i=0 ; $i < count($sortkurser); $i++) {
 
-    echo $sortkurser[$i] . "<br/>";
+    echo $sortkurser[$i] . "<br>";
 
 }
 
